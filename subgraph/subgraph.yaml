@@ -1,0 +1,25 @@
+specVersion: 0.0.5
+schema:
+  file: ./schema.graphql
+dataSources:
+  - kind: ethereum
+    name: TownCertificates
+    network: scroll-sepolia
+    source:
+      address: "0xbb83fe24908f71c299ff0f0391a16ab8f5be0cf1"
+      abi: TownCertificates
+      startBlock: 4124640
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.7
+      language: wasm/assemblyscript
+      entities:
+        - Transfer
+      abis:
+        - name: TownCertificates
+          file: ./abis/TownCertificates.json
+      eventHandlers:
+        - event: Transfer(indexed address,indexed address,indexed uint256)
+          handler: handleMinted
+
+      file: ./src/town-certificates.ts

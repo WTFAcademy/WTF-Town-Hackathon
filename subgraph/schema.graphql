@@ -1,0 +1,6 @@
+type Mint @entity {
+  id: ID!
+  tx: ID!
+  owner: String!
+  nftId: String!
+}
