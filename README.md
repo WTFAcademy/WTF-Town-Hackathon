@@ -1,6 +1,8 @@
 # WTF Town ｜ V0RTEx 01 : A Scroll Hackathon
 
-This version of WTF Town is built during Scroll hackathon.
+WTF Town is the next generation of AI onchain game.
+
+> This version of WTF Town is built during Scroll hackathon.
 
 demo: [wtf.town](https://wtf.town)
 
