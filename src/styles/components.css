@@ -1,0 +1,165 @@
+@tailwind components;
+
+@layer components {
+	.wtf-button {
+		border-style: solid;
+		padding: 0 12px;
+		box-sizing: content-box;
+		border-image: url('/image/pixel-bg/pixel-bg-button-small.svg') 6 fill / 6px / 0 stretch;
+		border-width: 16px;
+		transition: all 0.2s;
+		/*TODO size*/
+		/* height: 42px; */
+	}
+
+	.wtf-button:hover {
+		border-image-source: url('/image/pixel-bg/pixel-bg-button-small-hover.svg');
+	}
+
+	.wtf-button-magic {
+		color: white;
+		border-width: 12px;
+		border-image: url('/image/pixel-bg/pixel-bg-button-large.svg') 12 fill/ 12px / 0 stretch;
+		text-shadow:
+			-2px -2px 0 #000,
+			2px -2px 0 #000,
+			-2px 2px 0 #000,
+			2px 2px 0 #000;
+		transition: all 0.2s;
+	}
+
+	.wtf-button-magic:hover {
+		border-image-source: url('/image/pixel-bg/pixel-bg-button-large-hover.svg');
+	}
+
+	.wtf-button-magic::before {
+		content: '';
+		position: absolute;
+		display: block;
+		width: 72px;
+		height: 72px;
+		left: 50%;
+		top: -60px;
+		transform: translateX(-50%);
+		background-image: url('/home/home-wtfman-1.png');
+		background-size: 100% 100%;
+	}
+
+	.wtf-button-magic:hover::before {
+		background-image: url('/home/home-wtfman-2.png');
+	}
+
+	.wtf-dialog-container {
+		background-size: 100% 100%;
+		box-sizing: content-box;
+		padding: 15px 20px;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		border-image: url('/image/pixel-bg/pixel-bg-light-yellow.svg') 6 fill / 6px / 0 stretch;
+	}
+
+	.wtf-modal-container {
+		border-image: url('/image/pixel-bg/pixel-bg-brown.svg') 12 fill / 12px / 0 stretch;
+		box-sizing: content-box;
+		padding: 15px 20px;
+	}
+
+	.wtf-nft-container {
+		background: url('/image/nft-bg.svg');
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		box-sizing: content-box;
+		padding: 15px 20px;
+	}
+
+	.wtf-gpt-container {
+		background-image: url('/image/modal-border-white.svg');
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		box-sizing: content-box;
+		padding: 15px 8px;
+		position: relative;
+	}
+
+	.wtf-gpt-modal-container {
+		border-image: url('/image/pixel-bg/pixel-bg-light-gray.svg') 12 fill / 12px / 0 stretch;
+		padding: 12px;
+	}
+
+
+	@keyframes scroll {
+		0% {
+			transform: translateX(0);
+		}
+
+		100% {
+			transform: translateX(-672px);
+		}
+	}
+
+	.infinite-scrolling {
+		animation: 20s linear infinite scroll;
+	}
+}
+
+/*button*/
+@layer components {
+	.pixel-button {
+		border-width: 6px;
+		border-style: solid;
+		padding: 10px 12px;
+		transition: all 0.2s;
+	}
+
+	.pixel-button-default {
+		border-image: url('/image/pixel-bg/pixel-bg-button-small.svg') 6 fill / 6px / 0 stretch;
+	}
+
+	.pixel-button-default:hover {
+		border-image-source: url('/image/pixel-bg/pixel-bg-button-small-hover.svg');
+	}
+
+	.pixel-button-brown {
+		border-image: url('/image/pixel-bg/pixel-bg-brown-small.svg') 6 fill / 6px / 0 stretch;
+	}
+
+	.pixel-button-brown:hover {
+		border-image-source: url('/image/pixel-bg/pixel-bg-brown-small-hover.svg');
+	}
+}
+
+
+.pixel-loading-container {
+	background-color: rgba(0, 0, 0, 0.3);
+	display: flex;
+	flex-wrap: wrap;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	align-items: center;
+	justify-content: center;
+}
+
+.pixel {
+	width: 6px;
+	height: 6px;
+	background-color: #000;
+	margin: 3px;
+	animation: pixel-animation 1s infinite alternate;
+}
+
+@keyframes pixel-animation {
+	0% {
+		background-color: #000;
+	}
+	50% {
+		background-color: #fff;
+	}
+	100% {
+		background-color: #000;
+	}
+}

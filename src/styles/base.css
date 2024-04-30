@@ -1,0 +1,9 @@
+@tailwind base;
+
+@layer base {
+	:root {
+	}
+
+	[data-theme='dark'] {
+	}
+}

@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+@import url('./styles/base.css');
+@import url('./styles/components.css');
+@import url('./styles/utilities.css');
+
+@layer base {
+	body {
+		@apply font-pixel;
+	}
+}
