@@ -1,4 +1,8 @@
-# WTF Town
+# WTF Town ｜ V0RTEx 01 : A Scroll Hackathon
+
+This version of WTF Town is built during Scroll hackathon.
+
+demo: [wtf.town](https://wtf.town)
 
 ## Getting Started
 
