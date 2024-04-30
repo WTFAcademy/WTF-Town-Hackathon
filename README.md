@@ -4,6 +4,11 @@ This version of WTF Town is built during Scroll hackathon.
 
 demo: [wtf.town](https://wtf.town)
 
+subgraph: [link](https://api.studio.thegraph.com/proxy/37543/town-citizen/version/latest/)
+
+Citizen NFT contract (Scroll sepolia): [link](https://sepolia.scrollscan.com/address/0xbb83fe24908f71c299ff0f0391a16ab8f5be0cf1)
+
+
 ## Getting Started
 
 ```
