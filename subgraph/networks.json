@@ -1,0 +1,8 @@
+{
+  "scroll-sepolia": {
+    "TownCertificates": {
+      "address": "0xbb83fe24908f71c299ff0f0391a16ab8f5be0cf1",
+      "startBlock": 4124640
+    }
+  }
+}
